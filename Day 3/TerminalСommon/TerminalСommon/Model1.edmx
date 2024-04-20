@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище HranitelProModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Авторизация">
+          <Key>
+            <PropertyRef Name="Код авторизации" />
+          </Key>
+          <Property Name="Код авторизации" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Код посетителя" Type="int" Nullable="false" />
+          <Property Name="Логин" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Пароль" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Группа">
+          <Key>
+            <PropertyRef Name="Код группы" />
+          </Key>
+          <Property Name="Код группы" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Дата создания" Type="date" Nullable="false" />
+          <Property Name="Код сотрудника" Type="int" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Заявка">
+          <Key>
+            <PropertyRef Name="Код заявки" />
+          </Key>
+          <Property Name="Код заявки" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Код типа заявки" Type="int" Nullable="false" />
+          <Property Name="Код пропуска" Type="int" Nullable="false" />
+          <Property Name="Код подразделения" Type="int" Nullable="false" />
+          <Property Name="Код сотрудника" Type="int" Nullable="false" />
+          <Property Name="Дата создания" Type="date" Nullable="false" />
+          <Property Name="Дата и время посящения" Type="datetime" />
+          <Property Name="Код статуса" Type="int" Nullable="false" />
+          <Property Name="Причина отказа" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Организация">
+          <Key>
+            <PropertyRef Name="Код организации" />
+          </Key>
+          <Property Name="Код организации" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Отдел">
+          <Key>
+            <PropertyRef Name="Код отдела" />
+          </Key>
+          <Property Name="Код отдела" Type="int" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Подразделение">
+          <Key>
+            <PropertyRef Name="Код подразделения" />
+          </Key>
+          <Property Name="Код подразделения" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Назавние" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Посетитель">
+          <Key>
+            <PropertyRef Name="Код посетителя" />
+          </Key>
+          <Property Name="Код посетителя" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Фамилия" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Имя" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Отчество" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Номер телефона" Type="nvarchar" MaxLength="18" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Дата рождения" Type="date" Nullable="false" />
+          <Property Name="Код организации" Type="int" Nullable="false" />
+          <Property Name="Серия паспорта" Type="int" Nullable="false" />
+          <Property Name="Номер паспорта" Type="int" Nullable="false" />
+          <Property Name="Фотография" Type="varbinary(max)" />
+          <Property Name="Скан паспорта" Type="varbinary(max)" />
+          <Property Name="Примечания" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Посещающие">
+          <Key>
+            <PropertyRef Name="Код посещающих" />
+          </Key>
+          <Property Name="Код посещающих" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Код заявки" Type="int" Nullable="false" />
+          <Property Name="Код посетителя" Type="int" Nullable="false" />
+          <Property Name="Код группы" Type="int" />
+        </EntityType>
+        <EntityType Name="Пропуск">
+          <Key>
+            <PropertyRef Name="Код пропуска" />
+          </Key>
+          <Property Name="Код пропуска" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Срок начала действия" Type="date" Nullable="false" />
+          <Property Name="Срок окончания действия" Type="date" Nullable="false" />
+          <Property Name="Цель посещения" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Сотрудник">
+          <Key>
+            <PropertyRef Name="Код сотрудника" />
+          </Key>
+          <Property Name="Код сотрудника" Type="int" Nullable="false" />
+          <Property Name="Фамилия" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Имя" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Отчество" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Дата рождения" Type="date" Nullable="false" />
+          <Property Name="Номер телефона" Type="nvarchar" MaxLength="18" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" />
+          <Property Name="Код подразделения" Type="int" />
+          <Property Name="Код отдела" Type="int" />
+        </EntityType>
+        <EntityType Name="Статус">
+          <Key>
+            <PropertyRef Name="Код cтатуса" />
+          </Key>
+          <Property Name="Код cтатуса" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Тип заявки">
+          <Key>
+            <PropertyRef Name="Код типа заявки" />
+          </Key>
+          <Property Name="Код типа заявки" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Название" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Черный список">
+          <Key>
+            <PropertyRef Name="Код черного списка" />
+          </Key>
+          <Property Name="Код черного списка" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Код посетителя" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Авторизация_Посетитель">
+          <End Role="Посетитель" Type="Self.Посетитель" Multiplicity="1" />
+          <End Role="Авторизация" Type="Self.Авторизация" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Посетитель">
+              <PropertyRef Name="Код посетителя" />
+            </Principal>
+            <Dependent Role="Авторизация">
+              <PropertyRef Name="Код посетителя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Группа_Сотрудник">
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="1" />
+          <End Role="Группа" Type="Self.Группа" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудник">
+              <PropertyRef Name="Код сотрудника" />
+            </Principal>
+            <Dependent Role="Группа">
+              <PropertyRef Name="Код сотрудника" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Подразделение">
+          <End Role="Подразделение" Type="Self.Подразделение" Multiplicity="1" />
+          <End Role="Заявка" Type="Self.Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Подразделение">
+              <PropertyRef Name="Код подразделения" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код подразделения" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Пропуск">
+          <End Role="Пропуск" Type="Self.Пропуск" Multiplicity="1" />
+          <End Role="Заявка" Type="Self.Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Пропуск">
+              <PropertyRef Name="Код пропуска" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код пропуска" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Сотрудник">
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="1" />
+          <End Role="Заявка" Type="Self.Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудник">
+              <PropertyRef Name="Код сотрудника" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код сотрудника" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Статус">
+          <End Role="Статус" Type="Self.Статус" Multiplicity="1" />
+          <End Role="Заявка" Type="Self.Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Статус">
+              <PropertyRef Name="Код cтатуса" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код статуса" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Тип заявки">
+          <End Role="Тип заявки" Type="Self.Тип заявки" Multiplicity="1" />
+          <End Role="Заявка" Type="Self.Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Тип заявки">
+              <PropertyRef Name="Код типа заявки" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код типа заявки" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посетитель_Организация">
+          <End Role="Организация" Type="Self.Организация" Multiplicity="1" />
+          <End Role="Посетитель" Type="Self.Посетитель" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Организация">
+              <PropertyRef Name="Код организации" />
+            </Principal>
+            <Dependent Role="Посетитель">
+              <PropertyRef Name="Код организации" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посещающие_Группа">
+          <End Role="Группа" Type="Self.Группа" Multiplicity="0..1" />
+          <End Role="Посещающие" Type="Self.Посещающие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группа">
+              <PropertyRef Name="Код группы" />
+            </Principal>
+            <Dependent Role="Посещающие">
+              <PropertyRef Name="Код группы" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посещающие_Заявка">
+          <End Role="Заявка" Type="Self.Заявка" Multiplicity="1" />
+          <End Role="Посещающие" Type="Self.Посещающие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Заявка">
+              <PropertyRef Name="Код заявки" />
+            </Principal>
+            <Dependent Role="Посещающие">
+              <PropertyRef Name="Код заявки" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посещающие_Посетитель">
+          <End Role="Посетитель" Type="Self.Посетитель" Multiplicity="1" />
+          <End Role="Посещающие" Type="Self.Посещающие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Посетитель">
+              <PropertyRef Name="Код посетителя" />
+            </Principal>
+            <Dependent Role="Посещающие">
+              <PropertyRef Name="Код посетителя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_Отдел">
+          <End Role="Отдел" Type="Self.Отдел" Multiplicity="0..1" />
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Отдел">
+              <PropertyRef Name="Код отдела" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="Код отдела" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_Подразделение">
+          <End Role="Подразделение" Type="Self.Подразделение" Multiplicity="0..1" />
+          <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Подразделение">
+              <PropertyRef Name="Код подразделения" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="Код подразделения" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Черный список_Посетитель">
+          <End Role="Посетитель" Type="Self.Посетитель" Multiplicity="1" />
+          <End Role="Черный список" Type="Self.Черный список" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Посетитель">
+              <PropertyRef Name="Код посетителя" />
+            </Principal>
+            <Dependent Role="Черный список">
+              <PropertyRef Name="Код посетителя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Autorisation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Login" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="OrderFiltration" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Type" Type="varchar" Mode="In" />
+          <Parameter Name="Podrazdelenie" Type="varchar" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Registration" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Family" Type="varchar" Mode="In" />
+          <Parameter Name="Name" Type="nvarchar" Mode="In" />
+          <Parameter Name="Otchestvo" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Organisation" Type="nvarchar" Mode="In" />
+          <Parameter Name="Birthday" Type="nvarchar" Mode="In" />
+          <Parameter Name="Series" Type="int" Mode="In" />
+          <Parameter Name="Number" Type="int" Mode="In" />
+          <Parameter Name="Login" Type="nvarchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="Хранилище HranitelProModelContainer">
+          <EntitySet Name="Авторизация" EntityType="Self.Авторизация" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Группа" EntityType="Self.Группа" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Заявка" EntityType="Self.Заявка" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Организация" EntityType="Self.Организация" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Отдел" EntityType="Self.Отдел" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Подразделение" EntityType="Self.Подразделение" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Посетитель" EntityType="Self.Посетитель" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Посещающие" EntityType="Self.Посещающие" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Пропуск" EntityType="Self.Пропуск" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Сотрудник" EntityType="Self.Сотрудник" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Статус" EntityType="Self.Статус" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Тип заявки" EntityType="Self.Тип заявки" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Черный список" EntityType="Self.Черный список" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Авторизация_Посетитель" Association="Self.FK_Авторизация_Посетитель">
+            <End Role="Посетитель" EntitySet="Посетитель" />
+            <End Role="Авторизация" EntitySet="Авторизация" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Группа_Сотрудник" Association="Self.FK_Группа_Сотрудник">
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+            <End Role="Группа" EntitySet="Группа" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Подразделение" Association="Self.FK_Заявка_Подразделение">
+            <End Role="Подразделение" EntitySet="Подразделение" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Пропуск" Association="Self.FK_Заявка_Пропуск">
+            <End Role="Пропуск" EntitySet="Пропуск" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Сотрудник" Association="Self.FK_Заявка_Сотрудник">
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Статус" Association="Self.FK_Заявка_Статус">
+            <End Role="Статус" EntitySet="Статус" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Тип заявки" Association="Self.FK_Заявка_Тип заявки">
+            <End Role="Тип заявки" EntitySet="Тип заявки" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посетитель_Организация" Association="Self.FK_Посетитель_Организация">
+            <End Role="Организация" EntitySet="Организация" />
+            <End Role="Посетитель" EntitySet="Посетитель" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посещающие_Группа" Association="Self.FK_Посещающие_Группа">
+            <End Role="Группа" EntitySet="Группа" />
+            <End Role="Посещающие" EntitySet="Посещающие" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посещающие_Заявка" Association="Self.FK_Посещающие_Заявка">
+            <End Role="Заявка" EntitySet="Заявка" />
+            <End Role="Посещающие" EntitySet="Посещающие" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посещающие_Посетитель" Association="Self.FK_Посещающие_Посетитель">
+            <End Role="Посетитель" EntitySet="Посетитель" />
+            <End Role="Посещающие" EntitySet="Посещающие" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_Отдел" Association="Self.FK_Сотрудник_Отдел">
+            <End Role="Отдел" EntitySet="Отдел" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_Подразделение" Association="Self.FK_Сотрудник_Подразделение">
+            <End Role="Подразделение" EntitySet="Подразделение" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Черный список_Посетитель" Association="Self.FK_Черный список_Посетитель">
+            <End Role="Посетитель" EntitySet="Посетитель" />
+            <End Role="Черный список" EntitySet="Черный список" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HranitelProModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="HranitelProEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Авторизация" EntityType="HranitelProModel.Авторизация" />
+          <EntitySet Name="Группа" EntityType="HranitelProModel.Группа" />
+          <EntitySet Name="Заявка" EntityType="HranitelProModel.Заявка" />
+          <EntitySet Name="Организация" EntityType="HranitelProModel.Организация" />
+          <EntitySet Name="Отдел" EntityType="HranitelProModel.Отдел" />
+          <EntitySet Name="Подразделение" EntityType="HranitelProModel.Подразделение" />
+          <EntitySet Name="Посетитель" EntityType="HranitelProModel.Посетитель" />
+          <EntitySet Name="Посещающие" EntityType="HranitelProModel.Посещающие" />
+          <EntitySet Name="Пропуск" EntityType="HranitelProModel.Пропуск" />
+          <EntitySet Name="Сотрудник" EntityType="HranitelProModel.Сотрудник" />
+          <EntitySet Name="Статус" EntityType="HranitelProModel.Статус" />
+          <EntitySet Name="Тип_заявки" EntityType="HranitelProModel.Тип_заявки" />
+          <EntitySet Name="Черный_список" EntityType="HranitelProModel.Черный_список" />
+          <AssociationSet Name="FK_Авторизация_Посетитель" Association="HranitelProModel.FK_Авторизация_Посетитель">
+            <End Role="Посетитель" EntitySet="Посетитель" />
+            <End Role="Авторизация" EntitySet="Авторизация" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Группа_Сотрудник" Association="HranitelProModel.FK_Группа_Сотрудник">
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+            <End Role="Группа" EntitySet="Группа" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посещающие_Группа" Association="HranitelProModel.FK_Посещающие_Группа">
+            <End Role="Группа" EntitySet="Группа" />
+            <End Role="Посещающие" EntitySet="Посещающие" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Подразделение" Association="HranitelProModel.FK_Заявка_Подразделение">
+            <End Role="Подразделение" EntitySet="Подразделение" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Пропуск" Association="HranitelProModel.FK_Заявка_Пропуск">
+            <End Role="Пропуск" EntitySet="Пропуск" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Сотрудник" Association="HranitelProModel.FK_Заявка_Сотрудник">
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Статус" Association="HranitelProModel.FK_Заявка_Статус">
+            <End Role="Статус" EntitySet="Статус" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Заявка_Тип_заявки" Association="HranitelProModel.FK_Заявка_Тип_заявки">
+            <End Role="Тип_заявки" EntitySet="Тип_заявки" />
+            <End Role="Заявка" EntitySet="Заявка" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посещающие_Заявка" Association="HranitelProModel.FK_Посещающие_Заявка">
+            <End Role="Заявка" EntitySet="Заявка" />
+            <End Role="Посещающие" EntitySet="Посещающие" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посетитель_Организация" Association="HranitelProModel.FK_Посетитель_Организация">
+            <End Role="Организация" EntitySet="Организация" />
+            <End Role="Посетитель" EntitySet="Посетитель" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_Отдел" Association="HranitelProModel.FK_Сотрудник_Отдел">
+            <End Role="Отдел" EntitySet="Отдел" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Сотрудник_Подразделение" Association="HranitelProModel.FK_Сотрудник_Подразделение">
+            <End Role="Подразделение" EntitySet="Подразделение" />
+            <End Role="Сотрудник" EntitySet="Сотрудник" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Посещающие_Посетитель" Association="HranitelProModel.FK_Посещающие_Посетитель">
+            <End Role="Посетитель" EntitySet="Посетитель" />
+            <End Role="Посещающие" EntitySet="Посещающие" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Черный_список_Посетитель" Association="HranitelProModel.FK_Черный_список_Посетитель">
+            <End Role="Посетитель" EntitySet="Посетитель" />
+            <End Role="Черный_список" EntitySet="Черный_список" />
+          </AssociationSet>
+          <FunctionImport Name="Autorisation" ReturnType="Collection(HranitelProModel.Autorisation_Result)">
+            <Parameter Name="Login" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="OrderFiltration" ReturnType="Collection(HranitelProModel.OrderFiltration_Result)">
+            <Parameter Name="Type" Mode="In" Type="String" />
+            <Parameter Name="Podrazdelenie" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Registration">
+            <Parameter Name="Family" Mode="In" Type="String" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Otchestvo" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Organisation" Mode="In" Type="String" />
+            <Parameter Name="Birthday" Mode="In" Type="String" />
+            <Parameter Name="Series" Mode="In" Type="Int32" />
+            <Parameter Name="Number" Mode="In" Type="Int32" />
+            <Parameter Name="Login" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Авторизация">
+          <Key>
+            <PropertyRef Name="Код_авторизации" />
+          </Key>
+          <Property Name="Код_авторизации" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код_посетителя" Type="Int32" Nullable="false" />
+          <Property Name="Логин" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Пароль" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Посетитель" Relationship="HranitelProModel.FK_Авторизация_Посетитель" FromRole="Авторизация" ToRole="Посетитель" />
+        </EntityType>
+        <EntityType Name="Группа">
+          <Key>
+            <PropertyRef Name="Код_группы" />
+          </Key>
+          <Property Name="Код_группы" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Дата_создания" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Код_сотрудника" Type="Int32" Nullable="false" />
+          <Property Name="Название" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Сотрудник" Relationship="HranitelProModel.FK_Группа_Сотрудник" FromRole="Группа" ToRole="Сотрудник" />
+          <NavigationProperty Name="Посещающие" Relationship="HranitelProModel.FK_Посещающие_Группа" FromRole="Группа" ToRole="Посещающие" />
+        </EntityType>
+        <EntityType Name="Заявка">
+          <Key>
+            <PropertyRef Name="Код_заявки" />
+          </Key>
+          <Property Name="Код_заявки" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код_типа_заявки" Type="Int32" Nullable="false" />
+          <Property Name="Код_пропуска" Type="Int32" Nullable="false" />
+          <Property Name="Код_подразделения" Type="Int32" Nullable="false" />
+          <Property Name="Код_сотрудника" Type="Int32" Nullable="false" />
+          <Property Name="Дата_создания" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Код_статуса" Type="Int32" Nullable="false" />
+          <Property Name="Причина_отказа" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Подразделение" Relationship="HranitelProModel.FK_Заявка_Подразделение" FromRole="Заявка" ToRole="Подразделение" />
+          <NavigationProperty Name="Пропуск" Relationship="HranitelProModel.FK_Заявка_Пропуск" FromRole="Заявка" ToRole="Пропуск" />
+          <NavigationProperty Name="Сотрудник" Relationship="HranitelProModel.FK_Заявка_Сотрудник" FromRole="Заявка" ToRole="Сотрудник" />
+          <NavigationProperty Name="Статус" Relationship="HranitelProModel.FK_Заявка_Статус" FromRole="Заявка" ToRole="Статус" />
+          <NavigationProperty Name="Тип_заявки" Relationship="HranitelProModel.FK_Заявка_Тип_заявки" FromRole="Заявка" ToRole="Тип_заявки" />
+          <NavigationProperty Name="Посещающие" Relationship="HranitelProModel.FK_Посещающие_Заявка" FromRole="Заявка" ToRole="Посещающие" />
+          <Property Name="Дата_и_время_посящения" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Организация">
+          <Key>
+            <PropertyRef Name="Код_организации" />
+          </Key>
+          <Property Name="Код_организации" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Посетитель" Relationship="HranitelProModel.FK_Посетитель_Организация" FromRole="Организация" ToRole="Посетитель" />
+        </EntityType>
+        <EntityType Name="Отдел">
+          <Key>
+            <PropertyRef Name="Код_отдела" />
+          </Key>
+          <Property Name="Код_отдела" Type="Int32" Nullable="false" />
+          <Property Name="Название" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Сотрудник" Relationship="HranitelProModel.FK_Сотрудник_Отдел" FromRole="Отдел" ToRole="Сотрудник" />
+        </EntityType>
+        <EntityType Name="Подразделение">
+          <Key>
+            <PropertyRef Name="Код_подразделения" />
+          </Key>
+          <Property Name="Код_подразделения" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Назавние" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Заявка" Relationship="HranitelProModel.FK_Заявка_Подразделение" FromRole="Подразделение" ToRole="Заявка" />
+          <NavigationProperty Name="Сотрудник" Relationship="HranitelProModel.FK_Сотрудник_Подразделение" FromRole="Подразделение" ToRole="Сотрудник" />
+        </EntityType>
+        <EntityType Name="Посетитель">
+          <Key>
+            <PropertyRef Name="Код_посетителя" />
+          </Key>
+          <Property Name="Код_посетителя" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Фамилия" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Имя" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Отчество" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Номер_телефона" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Дата_рождения" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Код_организации" Type="Int32" Nullable="false" />
+          <Property Name="Серия_паспорта" Type="Int32" Nullable="false" />
+          <Property Name="Номер_паспорта" Type="Int32" Nullable="false" />
+          <Property Name="Фотография" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Скан_паспорта" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Примечания" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Авторизация" Relationship="HranitelProModel.FK_Авторизация_Посетитель" FromRole="Посетитель" ToRole="Авторизация" />
+          <NavigationProperty Name="Организация" Relationship="HranitelProModel.FK_Посетитель_Организация" FromRole="Посетитель" ToRole="Организация" />
+          <NavigationProperty Name="Посещающие" Relationship="HranitelProModel.FK_Посещающие_Посетитель" FromRole="Посетитель" ToRole="Посещающие" />
+          <NavigationProperty Name="Черный_список" Relationship="HranitelProModel.FK_Черный_список_Посетитель" FromRole="Посетитель" ToRole="Черный_список" />
+        </EntityType>
+        <EntityType Name="Посещающие">
+          <Key>
+            <PropertyRef Name="Код_посещающих" />
+          </Key>
+          <Property Name="Код_посещающих" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код_заявки" Type="Int32" Nullable="false" />
+          <Property Name="Код_посетителя" Type="Int32" Nullable="false" />
+          <Property Name="Код_группы" Type="Int32" />
+          <NavigationProperty Name="Группа" Relationship="HranitelProModel.FK_Посещающие_Группа" FromRole="Посещающие" ToRole="Группа" />
+          <NavigationProperty Name="Заявка" Relationship="HranitelProModel.FK_Посещающие_Заявка" FromRole="Посещающие" ToRole="Заявка" />
+          <NavigationProperty Name="Посетитель" Relationship="HranitelProModel.FK_Посещающие_Посетитель" FromRole="Посещающие" ToRole="Посетитель" />
+        </EntityType>
+        <EntityType Name="Пропуск">
+          <Key>
+            <PropertyRef Name="Код_пропуска" />
+          </Key>
+          <Property Name="Код_пропуска" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Срок_начала_действия" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Срок_окончания_действия" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Цель_посещения" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Заявка" Relationship="HranitelProModel.FK_Заявка_Пропуск" FromRole="Пропуск" ToRole="Заявка" />
+        </EntityType>
+        <EntityType Name="Сотрудник">
+          <Key>
+            <PropertyRef Name="Код_сотрудника" />
+          </Key>
+          <Property Name="Код_сотрудника" Type="Int32" Nullable="false" />
+          <Property Name="Фамилия" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Имя" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Отчество" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Дата_рождения" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Номер_телефона" Type="String" MaxLength="18" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Код_подразделения" Type="Int32" />
+          <Property Name="Код_отдела" Type="Int32" />
+          <NavigationProperty Name="Группа" Relationship="HranitelProModel.FK_Группа_Сотрудник" FromRole="Сотрудник" ToRole="Группа" />
+          <NavigationProperty Name="Заявка" Relationship="HranitelProModel.FK_Заявка_Сотрудник" FromRole="Сотрудник" ToRole="Заявка" />
+          <NavigationProperty Name="Отдел" Relationship="HranitelProModel.FK_Сотрудник_Отдел" FromRole="Сотрудник" ToRole="Отдел" />
+          <NavigationProperty Name="Подразделение" Relationship="HranitelProModel.FK_Сотрудник_Подразделение" FromRole="Сотрудник" ToRole="Подразделение" />
+        </EntityType>
+        <EntityType Name="Статус">
+          <Key>
+            <PropertyRef Name="Код_cтатуса" />
+          </Key>
+          <Property Name="Код_cтатуса" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Заявка" Relationship="HranitelProModel.FK_Заявка_Статус" FromRole="Статус" ToRole="Заявка" />
+        </EntityType>
+        <EntityType Name="Тип_заявки">
+          <Key>
+            <PropertyRef Name="Код_типа_заявки" />
+          </Key>
+          <Property Name="Код_типа_заявки" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Название" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Заявка" Relationship="HranitelProModel.FK_Заявка_Тип_заявки" FromRole="Тип_заявки" ToRole="Заявка" />
+        </EntityType>
+        <EntityType Name="Черный_список">
+          <Key>
+            <PropertyRef Name="Код_черного_списка" />
+          </Key>
+          <Property Name="Код_черного_списка" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код_посетителя" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Посетитель" Relationship="HranitelProModel.FK_Черный_список_Посетитель" FromRole="Черный_список" ToRole="Посетитель" />
+        </EntityType>
+        <Association Name="FK_Авторизация_Посетитель">
+          <End Type="HranitelProModel.Посетитель" Role="Посетитель" Multiplicity="1" />
+          <End Type="HranitelProModel.Авторизация" Role="Авторизация" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Посетитель">
+              <PropertyRef Name="Код_посетителя" />
+            </Principal>
+            <Dependent Role="Авторизация">
+              <PropertyRef Name="Код_посетителя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Группа_Сотрудник">
+          <End Type="HranitelProModel.Сотрудник" Role="Сотрудник" Multiplicity="1" />
+          <End Type="HranitelProModel.Группа" Role="Группа" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудник">
+              <PropertyRef Name="Код_сотрудника" />
+            </Principal>
+            <Dependent Role="Группа">
+              <PropertyRef Name="Код_сотрудника" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посещающие_Группа">
+          <End Type="HranitelProModel.Группа" Role="Группа" Multiplicity="0..1" />
+          <End Type="HranitelProModel.Посещающие" Role="Посещающие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группа">
+              <PropertyRef Name="Код_группы" />
+            </Principal>
+            <Dependent Role="Посещающие">
+              <PropertyRef Name="Код_группы" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Подразделение">
+          <End Type="HranitelProModel.Подразделение" Role="Подразделение" Multiplicity="1" />
+          <End Type="HranitelProModel.Заявка" Role="Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Подразделение">
+              <PropertyRef Name="Код_подразделения" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код_подразделения" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Пропуск">
+          <End Type="HranitelProModel.Пропуск" Role="Пропуск" Multiplicity="1" />
+          <End Type="HranitelProModel.Заявка" Role="Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Пропуск">
+              <PropertyRef Name="Код_пропуска" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код_пропуска" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Сотрудник">
+          <End Type="HranitelProModel.Сотрудник" Role="Сотрудник" Multiplicity="1" />
+          <End Type="HranitelProModel.Заявка" Role="Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Сотрудник">
+              <PropertyRef Name="Код_сотрудника" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код_сотрудника" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Статус">
+          <End Type="HranitelProModel.Статус" Role="Статус" Multiplicity="1" />
+          <End Type="HranitelProModel.Заявка" Role="Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Статус">
+              <PropertyRef Name="Код_cтатуса" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код_статуса" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Заявка_Тип_заявки">
+          <End Type="HranitelProModel.Тип_заявки" Role="Тип_заявки" Multiplicity="1" />
+          <End Type="HranitelProModel.Заявка" Role="Заявка" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Тип_заявки">
+              <PropertyRef Name="Код_типа_заявки" />
+            </Principal>
+            <Dependent Role="Заявка">
+              <PropertyRef Name="Код_типа_заявки" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посещающие_Заявка">
+          <End Type="HranitelProModel.Заявка" Role="Заявка" Multiplicity="1" />
+          <End Type="HranitelProModel.Посещающие" Role="Посещающие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Заявка">
+              <PropertyRef Name="Код_заявки" />
+            </Principal>
+            <Dependent Role="Посещающие">
+              <PropertyRef Name="Код_заявки" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посетитель_Организация">
+          <End Type="HranitelProModel.Организация" Role="Организация" Multiplicity="1" />
+          <End Type="HranitelProModel.Посетитель" Role="Посетитель" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Организация">
+              <PropertyRef Name="Код_организации" />
+            </Principal>
+            <Dependent Role="Посетитель">
+              <PropertyRef Name="Код_организации" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_Отдел">
+          <End Type="HranitelProModel.Отдел" Role="Отдел" Multiplicity="0..1" />
+          <End Type="HranitelProModel.Сотрудник" Role="Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Отдел">
+              <PropertyRef Name="Код_отдела" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="Код_отдела" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Сотрудник_Подразделение">
+          <End Type="HranitelProModel.Подразделение" Role="Подразделение" Multiplicity="0..1" />
+          <End Type="HranitelProModel.Сотрудник" Role="Сотрудник" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Подразделение">
+              <PropertyRef Name="Код_подразделения" />
+            </Principal>
+            <Dependent Role="Сотрудник">
+              <PropertyRef Name="Код_подразделения" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Посещающие_Посетитель">
+          <End Type="HranitelProModel.Посетитель" Role="Посетитель" Multiplicity="1" />
+          <End Type="HranitelProModel.Посещающие" Role="Посещающие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Посетитель">
+              <PropertyRef Name="Код_посетителя" />
+            </Principal>
+            <Dependent Role="Посещающие">
+              <PropertyRef Name="Код_посетителя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Черный_список_Посетитель">
+          <End Type="HranitelProModel.Посетитель" Role="Посетитель" Multiplicity="1" />
+          <End Type="HranitelProModel.Черный_список" Role="Черный_список" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Посетитель">
+              <PropertyRef Name="Код_посетителя" />
+            </Principal>
+            <Dependent Role="Черный_список">
+              <PropertyRef Name="Код_посетителя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="Autorisation_Result">
+          <Property Type="Int32" Name="Код_авторизации" Nullable="false" />
+          <Property Type="Int32" Name="Код_посетителя" Nullable="false" />
+          <Property Type="String" Name="Логин" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Пароль" Nullable="false" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="OrderFiltration_Result">
+          <Property Type="Int32" Name="Код_заявки" Nullable="false" />
+          <Property Type="String" Name="Тип_заявки" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Статус" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Подразделение" Nullable="false" MaxLength="250" />
+          <Property Type="Int32" Name="Код_сотрудника" Nullable="false" />
+          <Property Type="Int32" Name="Код_пропуска" Nullable="false" />
+          <Property Type="DateTime" Name="Срок_начала_действия" Nullable="false" />
+          <Property Type="DateTime" Name="Срок_окончания_действия" Nullable="false" />
+          <Property Type="String" Name="Цель_посещения" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Фамилия" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Имя" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Отчество" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Номер_телефона" Nullable="false" MaxLength="18" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="250" />
+          <Property Type="Int32" Name="Серия_паспорта" Nullable="false" />
+          <Property Type="Int32" Name="Номер_паспорта" Nullable="false" />
+          <Property Type="String" Name="организация" Nullable="false" MaxLength="250" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище HranitelProModelContainer" CdmEntityContainer="HranitelProEntities">
+          <EntitySetMapping Name="Авторизация">
+            <EntityTypeMapping TypeName="HranitelProModel.Авторизация">
+              <MappingFragment StoreEntitySet="Авторизация">
+                <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+                <ScalarProperty Name="Логин" ColumnName="Логин" />
+                <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+                <ScalarProperty Name="Код_авторизации" ColumnName="Код авторизации" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Группа">
+            <EntityTypeMapping TypeName="HranitelProModel.Группа">
+              <MappingFragment StoreEntitySet="Группа">
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Код_сотрудника" ColumnName="Код сотрудника" />
+                <ScalarProperty Name="Дата_создания" ColumnName="Дата создания" />
+                <ScalarProperty Name="Код_группы" ColumnName="Код группы" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Заявка">
+            <EntityTypeMapping TypeName="HranitelProModel.Заявка">
+              <MappingFragment StoreEntitySet="Заявка">
+                <ScalarProperty Name="Дата_и_время_посящения" ColumnName="Дата и время посящения" />
+                <ScalarProperty Name="Причина_отказа" ColumnName="Причина отказа" />
+                <ScalarProperty Name="Код_статуса" ColumnName="Код статуса" />
+                <ScalarProperty Name="Дата_создания" ColumnName="Дата создания" />
+                <ScalarProperty Name="Код_сотрудника" ColumnName="Код сотрудника" />
+                <ScalarProperty Name="Код_подразделения" ColumnName="Код подразделения" />
+                <ScalarProperty Name="Код_пропуска" ColumnName="Код пропуска" />
+                <ScalarProperty Name="Код_типа_заявки" ColumnName="Код типа заявки" />
+                <ScalarProperty Name="Код_заявки" ColumnName="Код заявки" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Организация">
+            <EntityTypeMapping TypeName="HranitelProModel.Организация">
+              <MappingFragment StoreEntitySet="Организация">
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Код_организации" ColumnName="Код организации" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Отдел">
+            <EntityTypeMapping TypeName="HranitelProModel.Отдел">
+              <MappingFragment StoreEntitySet="Отдел">
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Код_отдела" ColumnName="Код отдела" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Подразделение">
+            <EntityTypeMapping TypeName="HranitelProModel.Подразделение">
+              <MappingFragment StoreEntitySet="Подразделение">
+                <ScalarProperty Name="Назавние" ColumnName="Назавние" />
+                <ScalarProperty Name="Код_подразделения" ColumnName="Код подразделения" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Посетитель">
+            <EntityTypeMapping TypeName="HranitelProModel.Посетитель">
+              <MappingFragment StoreEntitySet="Посетитель">
+                <ScalarProperty Name="Примечания" ColumnName="Примечания" />
+                <ScalarProperty Name="Скан_паспорта" ColumnName="Скан паспорта" />
+                <ScalarProperty Name="Фотография" ColumnName="Фотография" />
+                <ScalarProperty Name="Номер_паспорта" ColumnName="Номер паспорта" />
+                <ScalarProperty Name="Серия_паспорта" ColumnName="Серия паспорта" />
+                <ScalarProperty Name="Код_организации" ColumnName="Код организации" />
+                <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Номер_телефона" ColumnName="Номер телефона" />
+                <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+                <ScalarProperty Name="Имя" ColumnName="Имя" />
+                <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+                <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Посещающие">
+            <EntityTypeMapping TypeName="HranitelProModel.Посещающие">
+              <MappingFragment StoreEntitySet="Посещающие">
+                <ScalarProperty Name="Код_группы" ColumnName="Код группы" />
+                <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+                <ScalarProperty Name="Код_заявки" ColumnName="Код заявки" />
+                <ScalarProperty Name="Код_посещающих" ColumnName="Код посещающих" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Пропуск">
+            <EntityTypeMapping TypeName="HranitelProModel.Пропуск">
+              <MappingFragment StoreEntitySet="Пропуск">
+                <ScalarProperty Name="Цель_посещения" ColumnName="Цель посещения" />
+                <ScalarProperty Name="Срок_окончания_действия" ColumnName="Срок окончания действия" />
+                <ScalarProperty Name="Срок_начала_действия" ColumnName="Срок начала действия" />
+                <ScalarProperty Name="Код_пропуска" ColumnName="Код пропуска" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Сотрудник">
+            <EntityTypeMapping TypeName="HranitelProModel.Сотрудник">
+              <MappingFragment StoreEntitySet="Сотрудник">
+                <ScalarProperty Name="Код_отдела" ColumnName="Код отдела" />
+                <ScalarProperty Name="Код_подразделения" ColumnName="Код подразделения" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Номер_телефона" ColumnName="Номер телефона" />
+                <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+                <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+                <ScalarProperty Name="Имя" ColumnName="Имя" />
+                <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+                <ScalarProperty Name="Код_сотрудника" ColumnName="Код сотрудника" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Статус">
+            <EntityTypeMapping TypeName="HranitelProModel.Статус">
+              <MappingFragment StoreEntitySet="Статус">
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Код_cтатуса" ColumnName="Код cтатуса" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Тип_заявки">
+            <EntityTypeMapping TypeName="HranitelProModel.Тип_заявки">
+              <MappingFragment StoreEntitySet="Тип заявки">
+                <ScalarProperty Name="Название" ColumnName="Название" />
+                <ScalarProperty Name="Код_типа_заявки" ColumnName="Код типа заявки" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Черный_список">
+            <EntityTypeMapping TypeName="HranitelProModel.Черный_список">
+              <MappingFragment StoreEntitySet="Черный список">
+                <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+                <ScalarProperty Name="Код_черного_списка" ColumnName="Код черного списка" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Autorisation" FunctionName="Хранилище HranitelProModel.Autorisation">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="HranitelProModel.Autorisation_Result">
+                <ScalarProperty Name="Код_авторизации" ColumnName="Код авторизации" />
+                <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+                <ScalarProperty Name="Логин" ColumnName="Логин" />
+                <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="OrderFiltration" FunctionName="Хранилище HranitelProModel.OrderFiltration">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="HranitelProModel.OrderFiltration_Result">
+                <ScalarProperty Name="Код_заявки" ColumnName="Код заявки" />
+                <ScalarProperty Name="Тип_заявки" ColumnName="Тип заявки" />
+                <ScalarProperty Name="Статус" ColumnName="Статус" />
+                <ScalarProperty Name="Подразделение" ColumnName="Подразделение" />
+                <ScalarProperty Name="Код_сотрудника" ColumnName="Код сотрудника" />
+                <ScalarProperty Name="Код_пропуска" ColumnName="Код пропуска" />
+                <ScalarProperty Name="Срок_начала_действия" ColumnName="Срок начала действия" />
+                <ScalarProperty Name="Срок_окончания_действия" ColumnName="Срок окончания действия" />
+                <ScalarProperty Name="Цель_посещения" ColumnName="Цель посещения" />
+                <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+                <ScalarProperty Name="Имя" ColumnName="Имя" />
+                <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+                <ScalarProperty Name="Номер_телефона" ColumnName="Номер телефона" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Серия_паспорта" ColumnName="Серия паспорта" />
+                <ScalarProperty Name="Номер_паспорта" ColumnName="Номер паспорта" />
+                <ScalarProperty Name="организация" ColumnName="организация" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Registration" FunctionName="Хранилище HranitelProModel.Registration" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

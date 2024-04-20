@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Terminal\u0421ommon||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\terminal\u0441ommon\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|solutionrelative:terminal\u0441ommon\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|c:\\users\\king night\\desktop\\terminal\u0441ommon\\terminal\u0441ommon\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|solutionrelative:terminal\u0441ommon\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\terminal\u0441ommon\\vieworder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|solutionrelative:terminal\u0441ommon\\vieworder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\terminal\u0441ommon\\checkorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|solutionrelative:terminal\u0441ommon\\checkorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\terminal\u0441ommon\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|solutionrelative:terminal\u0441ommon\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\terminal\u0441ommon\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|solutionrelative:terminal\u0441ommon\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1E6A2-9ACF-4ED3-A214-B47D2B14F4D7}|Terminal\u0421ommon\\Terminal\u0421ommon.csproj|c:\\users\\king night\\desktop\\terminal\u0441ommon\\terminal\u0441ommon\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Terminal\u0421ommon",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\Terminal\u0421ommon.csproj",
+              "RelativeDocumentMoniker": "Terminal\u0421ommon\\Terminal\u0421ommon.csproj",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\Terminal\u0421ommon.csproj",
+              "RelativeToolTip": "Terminal\u0421ommon\\Terminal\u0421ommon.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-17T18:55:26.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ViewOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\ViewOrder.xaml.cs",
+              "RelativeDocumentMoniker": "Terminal\u0421ommon\\ViewOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\ViewOrder.xaml.cs",
+              "RelativeToolTip": "Terminal\u0421ommon\\ViewOrder.xaml.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAawF4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T08:41:00.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewOrder.xaml",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\ViewOrder.xaml",
+              "RelativeDocumentMoniker": "Terminal\u0421ommon\\ViewOrder.xaml",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\ViewOrder.xaml",
+              "RelativeToolTip": "Terminal\u0421ommon\\ViewOrder.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T08:39:24.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\CheckOrder.xaml.cs",
+              "RelativeDocumentMoniker": "Terminal\u0421ommon\\CheckOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\CheckOrder.xaml.cs",
+              "RelativeToolTip": "Terminal\u0421ommon\\CheckOrder.xaml.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAlwEYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T13:39:44.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckOrder.xaml",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\CheckOrder.xaml",
+              "RelativeDocumentMoniker": "Terminal\u0421ommon\\CheckOrder.xaml",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\CheckOrder.xaml",
+              "RelativeToolTip": "Terminal\u0421ommon\\CheckOrder.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T13:37:59.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Autorisation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\Autorisation.xaml.cs",
+              "RelativeDocumentMoniker": "Terminal\u0421ommon\\Autorisation.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\Autorisation.xaml.cs",
+              "RelativeToolTip": "Terminal\u0421ommon\\Autorisation.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAkwCwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T08:33:38.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Autorisation.xaml",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\Autorisation.xaml",
+              "RelativeDocumentMoniker": "Terminal\u0421ommon\\Autorisation.xaml",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\Terminal\u0421ommon\\Terminal\u0421ommon\\Autorisation.xaml",
+              "RelativeToolTip": "Terminal\u0421ommon\\Autorisation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T08:12:50.198Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
