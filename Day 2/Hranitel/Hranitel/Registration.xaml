@@ -1,0 +1,69 @@
+﻿<Window x:Class="Hranitel.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hranitel"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="570" Width="550">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="500" Height="520" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+        <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="500" Height="50" VerticalAlignment="Center" RadiusY="8" Fill="Orange" Margin="0,-470,0,0"/>
+        <Label Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Margin="0,-470,0,0"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
+            <Grid>
+                <Label Content="Фамилия" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="famaly" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Имя" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="name" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Отчество" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="otchestvo" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Телефон" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="phone" MaxLength="7" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="email" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Организация" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="organisation" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Дата рождения" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="birthday" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Серия паспорта" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="seriesPasp" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Номер паспорта" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="nomerPasp" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Логин" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                <TextBox x:Name="login" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Пароль" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="18"/>
+                <TextBox x:Name="password" HorizontalAlignment="Left" Margin="160,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" FontSize="18"/>
+            </Grid>
+            <Grid>
+                <Label Content="Способ входа:" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top" FontSize="18"/>
+                <ComboBox x:Name="ways" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top" Width="290" FontSize="18" SelectedIndex="0">
+                    <TextBlock>ORM</TextBlock>
+                    <TextBlock>SQL Запрос</TextBlock>
+                    <TextBlock>Хранимая процедура</TextBlock>
+                </ComboBox>
+            </Grid>
+            <Button x:Name="EnterB" Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,10,0,0" Width="450" FontSize="18" Click="EnterB_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
