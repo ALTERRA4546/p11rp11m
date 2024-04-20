@@ -1,0 +1,29 @@
+﻿<Window x:Class="TerminalСommon.Report"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TerminalСommon"
+        mc:Ignorable="d"
+        Title="Информация о количестве посетителей" Height="600" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0">
+            <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="970" Height="540" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+            <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="970" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange"/>
+            <Label Content="Информация о количестве посетителей" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+            <StackPanel Margin="10,60,10,10">
+                <WrapPanel HorizontalAlignment="Center">
+                    <WrapPanel>
+                        <Label Content="Количество посящений в:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"/>
+                        <ComboBox x:Name="type" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" FontSize="18" Margin="0,2,0,0" SelectionChanged="type_SelectionChanged"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <Label Content="Группировать по подразделениям:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"/>
+                        <CheckBox x:Name="groupCh" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" Click="groupCh_Click"/>
+                    </WrapPanel>
+                </WrapPanel>
+                <DataGrid x:Name="dataOut" Width="940" Height="420" Margin="0,10,0,0" d:ItemsSource="{d:SampleData ItemCount=5}" Background="LightGray"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

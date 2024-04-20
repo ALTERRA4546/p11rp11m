@@ -1,0 +1,49 @@
+﻿<Window x:Class="Hranitel.Event"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hranitel"
+        mc:Ignorable="d"
+        Title="Мероприятия" Height="548" Width="1109" Closing="Window_Closing">
+    <Grid>
+        <WrapPanel Margin="10">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,10,0">
+                <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="250" Height="450" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+                <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="250" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange"/>
+                <Label Content="Скоро" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0">
+                    <Label Content="Открытие нового цеха" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Label Content="12.03.2024 в 15:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                    <Label Content="_________________________________________________________" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Label Content="Открытие нового цеха" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Label Content="12.03.2024 в 15:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                    <Label Content="_________________________________________________________" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Label Content="Открытие нового цеха" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Label Content="12.03.2024 в 15:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                </StackPanel>
+            </Grid>
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,10,0">
+                <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="800" Height="450" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+                <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="800" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange"/>
+                <Label Content="Новости" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                <Button x:Name="enter" Content="Записаться" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Margin="0,10,10,0" Width="180" Background="Orange" Click="enter_Click"/>
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" Width="780">
+                    <Label Content="Открытие нового цеха" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <WrapPanel>
+                        <Label Content="Скоро откроеться новый цех" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0" Width="650"/>
+                        <Image HorizontalAlignment="Right" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Source="/free-icon-avatar-6386976.png"/>
+                    </WrapPanel>
+                    <Label Content="12.03.2024 в 15:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                    <Label Content="_________________________________________________________" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Label Content="Открытие нового цеха" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <WrapPanel>
+                        <Label Content="Скоро откроеться новый цех" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0" Width="650"/>
+                        <Image HorizontalAlignment="Right" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Source="/free-icon-avatar-6386976.png"/>
+                    </WrapPanel>
+                    <Label Content="12.03.2024 в 15:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                </StackPanel>
+            </Grid>
+        </WrapPanel>
+    </Grid>
+</Window>

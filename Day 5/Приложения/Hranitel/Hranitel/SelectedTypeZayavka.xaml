@@ -1,0 +1,32 @@
+﻿<Window x:Class="Hranitel.SelectedTypeZayavka"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hranitel"
+        mc:Ignorable="d"
+        Title="Выбор заявки" Height="450" Width="800" Closing="Window_Closing" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,10,0">
+                <Rectangle HorizontalAlignment="Left" RadiusX="8" Width="210" Height="230" Margin="0,0,0,0" VerticalAlignment="Center" RadiusY="8" Fill="LightGray" Opacity="10"/>
+                <Rectangle HorizontalAlignment="Center" Width="120" Height="120" VerticalAlignment="Top" Fill="White" Opacity="10" Margin="0,30,0,0"/>
+                <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="/free-icon-avatar-6386976.png" Margin="0,40,0,0"/>
+                <Label Content="Личное посящение" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Foreground="Gray" Margin="0,170,0,0"/>
+                <Button x:Name="LitVisit" HorizontalAlignment="Center" VerticalAlignment="Center" Height="230" Width="210" Opacity="0" Click="LitchnVisit"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0">
+                <Rectangle HorizontalAlignment="Left" RadiusX="8" Width="210" Height="230" Margin="0,0,0,0" VerticalAlignment="Center" RadiusY="8" Fill="LightGray" Opacity="10"/>
+                <Rectangle HorizontalAlignment="Center" Width="120" Height="120" VerticalAlignment="Top" Fill="White" Opacity="10" Margin="0,30,0,0"/>
+                <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Source="/free-icon-group-694642.png" Margin="0,40,0,0"/>
+                <Label Content="Групповое посящение" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Foreground="Gray" Margin="0,170,0,0"/>
+                <Button x:Name="GroupVisit" HorizontalAlignment="Center" VerticalAlignment="Center" Height="230" Width="210" Opacity="0" Click="GrupaVisit"/>
+            </Grid>
+        </WrapPanel>
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0">
+            <Rectangle HorizontalAlignment="Center" RadiusX="29.5" Width="60" Height="60" VerticalAlignment="Center" RadiusY="29.5" Stroke="Gray"/>
+            <Image HorizontalAlignment="Center" Height="44" VerticalAlignment="Center" Width="44" Source="/free-icon-avatar-6386976.png"/>
+            <Button x:Name="Avtoris" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="60" Opacity="0" Click="AvtorizationVisit"/>
+        </Grid>
+    </Grid>
+</Window>

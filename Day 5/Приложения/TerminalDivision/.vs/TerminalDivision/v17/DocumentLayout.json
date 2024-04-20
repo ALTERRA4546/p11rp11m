@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|c:\\users\\king night\\desktop\\terminaldivision\\terminaldivision\\blacklist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|solutionrelative:terminaldivision\\blacklist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|C:\\Users\\King Night\\Desktop\\TerminalDivision\\terminaldivision\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|solutionrelative:terminaldivision\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|C:\\Users\\King Night\\Desktop\\TerminalDivision\\terminaldivision\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|solutionrelative:terminaldivision\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|C:\\Users\\King Night\\Desktop\\TerminalDivision\\terminaldivision\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D29088AB-2F5F-4ECF-A725-065F8FE9E53C}|TerminalDivision\\TerminalDivision.csproj|solutionrelative:terminaldivision\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\ViewOrder.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalDivision\\ViewOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\ViewOrder.xaml.cs",
+              "RelativeToolTip": "TerminalDivision\\ViewOrder.xaml.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAAwLYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:58:54.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CheckOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\CheckOrder.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalDivision\\CheckOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\CheckOrder.xaml.cs",
+              "RelativeToolTip": "TerminalDivision\\CheckOrder.xaml.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAwwG0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:57:50.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlackList.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\BlackList.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalDivision\\BlackList.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\BlackList.xaml.cs",
+              "RelativeToolTip": "TerminalDivision\\BlackList.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:57:31.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Autorisation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\Autorisation.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalDivision\\Autorisation.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalDivision\\TerminalDivision\\Autorisation.xaml.cs",
+              "RelativeToolTip": "TerminalDivision\\Autorisation.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowBoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:57:16.704Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+﻿<Window x:Class="Hranitel.GVisit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hranitel"
+        mc:Ignorable="d"
+        Title="Групповое посящение" Height="660" Width="1100" Closing="Window_Closing" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="10">
+            <WrapPanel>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,35,20">
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="420" Height="194" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="420" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange"/>
+                    <Label Content="Информация для пропуска" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
+                        <StackPanel>
+                            <Label Content="Срок действия заявки:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                            <WrapPanel>
+                                <Label Content="С*" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18"/>
+                                <DatePicker x:Name="fromDate" FontSize="18" Width="160" Height="30"/>
+                                <Label Content="по" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18"/>
+                                <DatePicker x:Name="toDate" FontSize="18" Width="160" Height="30"/>
+                            </WrapPanel>
+                            <Label Content="Цель посящения:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"/>
+                            <TextBox x:Name="target" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" FontSize="18"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,20">
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="600" Height="194" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="600" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange"/>
+                    <Label Content="Информация для пропуска" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,50,0,0">
+                        <StackPanel>
+                            <Label Content="Подразделение:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                            <ComboBox x:Name="podrazdel" Width="550" FontSize="18" HorizontalAlignment="Left"/>
+                            <Label Content="ФИО:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                            <WrapPanel>
+                                <TextBox x:Name="fio" HorizontalAlignment="Left" TextWrapping="Wrap" Width="525" FontSize="18"/>
+                                <Grid>
+                                    <Image Height="25" Width="25" Source="/free-icon-avatar-6386976.png"/>
+                                    <Button x:Name="selectSotrud" Opacity="0" Click="selectSotrud_Click"/>
+                                </Grid>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </WrapPanel>
+            <WrapPanel>
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,10,20">
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="700" Height="256" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="700" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange" Margin="0,0,0,0"/>
+                    <Label Content="Информация о посетителе" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <StackPanel>
+                        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
+                            <StackPanel Margin="0,0,10,0">
+                                <Grid>
+                                    <Label Content="Фамилия:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="famaly" HorizontalAlignment="Left" Margin="110,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Имя:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="name" HorizontalAlignment="Left" Margin="110,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Отчество:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="otchestvo" HorizontalAlignment="Left" Margin="110,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Телефон:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="phone" MaxLength="11" HorizontalAlignment="Left" Margin="110,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="email" HorizontalAlignment="Left" Margin="110,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Margin="10,0,10,0">
+                                <Grid>
+                                    <Label Content="Организация:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="organisation" HorizontalAlignment="Left" Margin="130,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Примечание:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="primechanie" HorizontalAlignment="Left" Margin="130,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Дата рождения:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <DatePicker x:Name="birthday" FontSize="18" Width="180" Height="30" Margin="150,0,0,0"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Серия:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="seriesPasp" MaxLength="4" HorizontalAlignment="Left" Margin="130,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                                <Grid>
+                                    <Label Content="Номер:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Margin="0,0,0,0"/>
+                                    <TextBox x:Name="nomerPasp" MaxLength="6" HorizontalAlignment="Left" Margin="130,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18"/>
+                                </Grid>
+                            </StackPanel>
+                        </WrapPanel>
+                        <Button x:Name="addUser" Content="Добавить посетителя" Width="140" HorizontalAlignment="Right" Margin="0,5,25,0" Click="addUser_Click"/>
+                    </StackPanel>
+                </Grid>
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,20">
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="340" Height="256" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="340" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange" Margin="0,0,0,0"/>
+                    <Label Content="Список посетителей" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <StackPanel Margin="0,50,0,0">
+                        <WrapPanel Margin="0,10,0,0">
+                            <WrapPanel Margin="0,0,20,0">
+                                <Image Height="25" Width="25" Source="/free-icon-avatar-6386976.png"/>
+                                <Label Content="Загрузить список" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12" Foreground="Red" Margin="0,0,0,0"/>
+                            </WrapPanel>
+                            <WrapPanel>
+                                <Image Height="25" Width="25" Source="/free-icon-avatar-6386976.png"/>
+                                <Label Content="Скачать шаблон списка" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="12" Foreground="Red" Margin="0,0,0,0"/>
+                            </WrapPanel>
+                        </WrapPanel>
+                        <DataGrid x:Name="dataOut" Width="320" Height="120" Margin="0,10,0,0" d:ItemsSource="{d:SampleData ItemCount=5}" Background="LightGray"/>
+                        <Button x:Name="selectimage" Content="Загрузить фото" HorizontalAlignment="Right" Margin="0,10,10,0" Width="100" VerticalAlignment="Top" Background="LightGray" Foreground="Gray" Click="uploadPhoto_Click"/>
+                    </StackPanel>
+                </Grid>
+            </WrapPanel>
+            <WrapPanel>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,80,0">
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="600" Height="107" VerticalAlignment="Center" RadiusY="8" Fill="LightGray"/>
+                    <Rectangle HorizontalAlignment="Center" RadiusX="8" Width="600" Height="50" VerticalAlignment="Top" RadiusY="8" Fill="Orange"/>
+                    <Label Content="Прикрепляемые документы" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Margin="0,8,0,0"/>
+                    <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,50,0,0">
+                        <Label Content="↑ Прикрепить файл" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18"/>
+                        <Button x:Name="selectFile" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="170" Opacity="0" Click="selectFile_Click"/>
+                    </Grid>
+                </Grid>
+                <Grid VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0">
+                    <Label Content="Очистить форму" FontSize="18"/>
+                    <Button x:Name="clearForm" Opacity="0" Click="clearForm_Click"/>
+                    <Button x:Name="sendData" Content="Оформить заявку" Margin="170,0,0,0" Width="200" FontSize="18" Click="sendData_Click"/>
+                </Grid>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

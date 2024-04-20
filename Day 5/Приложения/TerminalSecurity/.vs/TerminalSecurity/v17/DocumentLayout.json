@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|c:\\users\\king night\\desktop\\terminalsecurity\\terminalsecurity\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Desktop\\TerminalSecurity\\terminalsecurity\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Desktop\\TerminalSecurity\\terminalsecurity\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\TerminalSecurity\\ViewOrder.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalSecurity\\ViewOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\TerminalSecurity\\ViewOrder.xaml.cs",
+              "RelativeToolTip": "TerminalSecurity\\ViewOrder.xaml.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAA7wK8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:55:33.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\TerminalSecurity\\CheckOrder.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalSecurity\\CheckOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\TerminalSecurity\\CheckOrder.xaml.cs",
+              "RelativeToolTip": "TerminalSecurity\\CheckOrder.xaml.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAowHQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:54:00.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Autorisation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\TerminalSecurity\\Autorisation.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalSecurity\\Autorisation.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\TerminalSecurity\\Autorisation.xaml.cs",
+              "RelativeToolTip": "TerminalSecurity\\Autorisation.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBsAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:53:29.9Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
