@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|c:\\users\\king night\\documents\\\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0431\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0434\u0435\u043D\u044C 4\\terminalsecurity\\terminalsecurity\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\vieworder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\terminalsecurity\\vieworder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\vieworder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\terminalsecurity\\checkorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\checkorder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\terminalsecurity\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\checkorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\terminalsecurity\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\autorisation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\terminalsecurity\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\autorisation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\terminalsecurity\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{025B0FF9-1DB6-4100-9A26-A31A1FA2E9D9}|TerminalSecurity\\TerminalSecurity.csproj|solutionrelative:terminalsecurity\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\Model1.edmx",
+              "RelativeDocumentMoniker": "TerminalSecurity\\Model1.edmx",
+              "ToolTip": "C:\\Users\\King Night\\Desktop\\TerminalSecurity\\TerminalSecurity\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Desktop\\TerminalSecurity\\TerminalSecurity\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-04-18T10:07:45.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CheckOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\CheckOrder.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalSecurity\\CheckOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\CheckOrder.xaml.cs",
+              "RelativeToolTip": "TerminalSecurity\\CheckOrder.xaml.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAqwHIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:35:02.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CheckOrder.xaml",
+              "DocumentMoniker": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\CheckOrder.xaml",
+              "RelativeDocumentMoniker": "TerminalSecurity\\CheckOrder.xaml",
+              "ToolTip": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\CheckOrder.xaml",
+              "RelativeToolTip": "TerminalSecurity\\CheckOrder.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-18T07:52:32.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewOrder.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\ViewOrder.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalSecurity\\ViewOrder.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\ViewOrder.xaml.cs",
+              "RelativeToolTip": "TerminalSecurity\\ViewOrder.xaml.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAmwKwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T07:52:00.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewOrder.xaml",
+              "DocumentMoniker": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\ViewOrder.xaml",
+              "RelativeDocumentMoniker": "TerminalSecurity\\ViewOrder.xaml",
+              "ToolTip": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\ViewOrder.xaml",
+              "RelativeToolTip": "TerminalSecurity\\ViewOrder.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-18T09:00:09.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Autorisation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\Autorisation.xaml.cs",
+              "RelativeDocumentMoniker": "TerminalSecurity\\Autorisation.xaml.cs",
+              "ToolTip": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\Autorisation.xaml.cs",
+              "RelativeToolTip": "TerminalSecurity\\Autorisation.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAEwBoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T07:49:10.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Autorisation.xaml",
+              "DocumentMoniker": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\Autorisation.xaml",
+              "RelativeDocumentMoniker": "TerminalSecurity\\Autorisation.xaml",
+              "ToolTip": "C:\\Users\\King Night\\Documents\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430 2023\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\\u0411\u0430\u0437\u0430 \u0434\u0430\u043D\u043D\u044B\u0445\\\u0414\u0435\u043D\u044C 4\\TerminalSecurity\\TerminalSecurity\\Autorisation.xaml",
+              "RelativeToolTip": "TerminalSecurity\\Autorisation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-18T07:48:47.341Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="edd99e512def473891ad0563efda5237" Name="Diagram1">
+        <EntityTypeShape EntityType="HranitelProModel.Авторизация" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Группа" Width="1.5" PointX="6" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Заявка" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Организация" Width="1.5" PointX="3.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Отдел" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Подразделение" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Посетитель" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Посещающие" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Пропуск" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Сотрудник" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Статус" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Тип_заявки" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HranitelProModel.Черный_список" Width="1.5" PointX="8.25" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="HranitelProModel.FK_Авторизация_Посетитель" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Посещающие_Группа" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Заявка_Подразделение" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Заявка_Пропуск" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Заявка_Сотрудник" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Заявка_Статус" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Заявка_Тип_заявки" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Посещающие_Заявка" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Посетитель_Организация" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Сотрудник_Отдел" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Сотрудник_Подразделение" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Посещающие_Посетитель" ManuallyRouted="false" />
+        <AssociationConnector Association="HranitelProModel.FK_Черный_список_Посетитель" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

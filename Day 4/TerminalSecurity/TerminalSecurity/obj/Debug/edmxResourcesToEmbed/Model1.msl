@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище HranitelProModelContainer" CdmEntityContainer="HranitelProEntities">
+    <EntitySetMapping Name="Авторизация">
+      <EntityTypeMapping TypeName="HranitelProModel.Авторизация">
+        <MappingFragment StoreEntitySet="Авторизация">
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+          <ScalarProperty Name="Код_авторизации" ColumnName="Код авторизации" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Группа">
+      <EntityTypeMapping TypeName="HranitelProModel.Группа">
+        <MappingFragment StoreEntitySet="Группа">
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Дата_создания" ColumnName="Дата создания" />
+          <ScalarProperty Name="Код_группы" ColumnName="Код группы" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Заявка">
+      <EntityTypeMapping TypeName="HranitelProModel.Заявка">
+        <MappingFragment StoreEntitySet="Заявка">
+          <ScalarProperty Name="Причина_отказа" ColumnName="Причина отказа" />
+          <ScalarProperty Name="Код_статуса" ColumnName="Код статуса" />
+          <ScalarProperty Name="Доступ_на_территорию" ColumnName="Доступ на территорию" />
+          <ScalarProperty Name="Время_ухода" ColumnName="Время ухода" />
+          <ScalarProperty Name="Дата_и_время_посящения" ColumnName="Дата и время посящения" />
+          <ScalarProperty Name="Дата_создания" ColumnName="Дата создания" />
+          <ScalarProperty Name="Код_сотрудника" ColumnName="Код сотрудника" />
+          <ScalarProperty Name="Код_подразделения" ColumnName="Код подразделения" />
+          <ScalarProperty Name="Код_пропуска" ColumnName="Код пропуска" />
+          <ScalarProperty Name="Код_типа_заявки" ColumnName="Код типа заявки" />
+          <ScalarProperty Name="Код_заявки" ColumnName="Код заявки" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Организация">
+      <EntityTypeMapping TypeName="HranitelProModel.Организация">
+        <MappingFragment StoreEntitySet="Организация">
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Код_организации" ColumnName="Код организации" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Отдел">
+      <EntityTypeMapping TypeName="HranitelProModel.Отдел">
+        <MappingFragment StoreEntitySet="Отдел">
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Код_отдела" ColumnName="Код отдела" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Подразделение">
+      <EntityTypeMapping TypeName="HranitelProModel.Подразделение">
+        <MappingFragment StoreEntitySet="Подразделение">
+          <ScalarProperty Name="Назавние" ColumnName="Назавние" />
+          <ScalarProperty Name="Код_подразделения" ColumnName="Код подразделения" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Посетитель">
+      <EntityTypeMapping TypeName="HranitelProModel.Посетитель">
+        <MappingFragment StoreEntitySet="Посетитель">
+          <ScalarProperty Name="Примечания" ColumnName="Примечания" />
+          <ScalarProperty Name="Скан_паспорта" ColumnName="Скан паспорта" />
+          <ScalarProperty Name="Фотография" ColumnName="Фотография" />
+          <ScalarProperty Name="Номер_паспорта" ColumnName="Номер паспорта" />
+          <ScalarProperty Name="Серия_паспорта" ColumnName="Серия паспорта" />
+          <ScalarProperty Name="Код_организации" ColumnName="Код организации" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Номер_телефона" ColumnName="Номер телефона" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Посещающие">
+      <EntityTypeMapping TypeName="HranitelProModel.Посещающие">
+        <MappingFragment StoreEntitySet="Посещающие">
+          <ScalarProperty Name="Код_группы" ColumnName="Код группы" />
+          <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+          <ScalarProperty Name="Код_заявки" ColumnName="Код заявки" />
+          <ScalarProperty Name="Код_посещающих" ColumnName="Код посещающих" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пропуск">
+      <EntityTypeMapping TypeName="HranitelProModel.Пропуск">
+        <MappingFragment StoreEntitySet="Пропуск">
+          <ScalarProperty Name="Цель_посещения" ColumnName="Цель посещения" />
+          <ScalarProperty Name="Срок_окончания_действия" ColumnName="Срок окончания действия" />
+          <ScalarProperty Name="Срок_начала_действия" ColumnName="Срок начала действия" />
+          <ScalarProperty Name="Код_пропуска" ColumnName="Код пропуска" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Сотрудник">
+      <EntityTypeMapping TypeName="HranitelProModel.Сотрудник">
+        <MappingFragment StoreEntitySet="Сотрудник">
+          <ScalarProperty Name="Код_отдела" ColumnName="Код отдела" />
+          <ScalarProperty Name="Код_подразделения" ColumnName="Код подразделения" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Номер_телефона" ColumnName="Номер телефона" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Код_авторизации" ColumnName="Код авторизации" />
+          <ScalarProperty Name="Код_сотрудника" ColumnName="Код сотрудника" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Статус">
+      <EntityTypeMapping TypeName="HranitelProModel.Статус">
+        <MappingFragment StoreEntitySet="Статус">
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Код_cтатуса" ColumnName="Код cтатуса" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Тип_заявки">
+      <EntityTypeMapping TypeName="HranitelProModel.Тип_заявки">
+        <MappingFragment StoreEntitySet="Тип заявки">
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Код_типа_заявки" ColumnName="Код типа заявки" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Черный_список">
+      <EntityTypeMapping TypeName="HranitelProModel.Черный_список">
+        <MappingFragment StoreEntitySet="Черный список">
+          <ScalarProperty Name="Код_посетителя" ColumnName="Код посетителя" />
+          <ScalarProperty Name="Код_черного_списка" ColumnName="Код черного списка" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
